@@ -1,4 +1,4 @@
 Para hacer comentarios en JavaScript se puede hacer de dos maneras:
-// -> //comentario 1
-/* */ -> /* comentario 2 */
+// -> <pre><code>//comentario 1</pre></code>
+/* */ -> <pre></code>/* comentario 2 */</pre></code>
 
