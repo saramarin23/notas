@@ -1,4 +1,4 @@
-# notas
+# intro
 Para hacer comentarios en JavaScript se puede hacer de dos maneras:
 <pre><code> //comentario 1 </pre></code>
 <pre></code> /* comentario 2 */ </pre></code>
@@ -18,7 +18,7 @@ Podemos añadir un número a la variable simplemente escribiendo <b>++</b>. Así
 Lo mismo podemos hacer para restar un número: <b>--</b>. 
 
 Operadores de asignación: Podemos usar sumas (o restas) para modificar los contenidos de la variable a través del operador <b>+=</b> (o <b>-=</b>). Ej:
-<pre><code>myVar = myVar + 5; es igual a myVar=+5;</pre></code>
+<pre><code>myVar = myVar + 5; es igual a myVar+=5;</pre></code>
 Lo mismo sucede con la multiplicación <b>*=</b> y la división <b>/=</b>:
 <pre><code>myVar /= 2;</pre></code>
 
@@ -28,3 +28,18 @@ Para definir caracteres (<i>strings</i>) se debe comenzar y terminar con comilla
 Podemos concatenar strings con <b>+</b>: "Hello " + "World". Igualmente sería con +=. Ejemplo:
 <pre><code>var myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";</pre></code>
+Del mismo modo, podemos añadir una variable en una sentencia:
+<pre><code> "My name is " + myName + " and I am fine."</pre></code>
+
+Para saber la longitud de la variable utilizamos <b>.length</b> junto a la variable: <i>myName.length</i>
+Para saber el primer caracter de una variable pondremos <b>[0]</b> justo al final de dicha variable <i>myName[0]</i>
+
+En JavaScript los caracteres son inmutables. Para cambiar uno, tendríamos que cambiar toda la variable. Así, no sería válido <i>myName[0] = "P";</i>. Para obtener el último, restaremos 1 a .length: <i>myName[myName.length -1]</i>
+
+Arrays
+----
+
+En JavaScript podemos almacenar varios datos en un único lugar. Ejemplo:
+<pre><code>var Sandwich = ["peanut butter", "bread", "jelly"];</pre></code>
+También se puede crear un array dentro de otro:
+<pre><code>var ourArray = [["the universe", 42], ["everything", 101010]];</pre></code>
