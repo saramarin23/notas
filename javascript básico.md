@@ -43,3 +43,18 @@ En JavaScript podemos almacenar varios datos en un único lugar. Ejemplo:
 <pre><code>var Sandwich = ["peanut butter", "bread", "jelly"];</pre></code>
 También se puede crear un array dentro de otro:
 <pre><code>var ourArray = [["the universe", 42], ["everything", 101010]];</pre></code>
+
+Se puede añadir datos con el código <b>.push()</b>:
+<pre><code>var arr = [1,2,3];
+arr.push(4);
+// arr is now [1,2,3,4]</pre></code>
+Del mismo modo, podemos eliminar el último dato con <b>.pop()</b>:
+<pre><code>var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop();
+console.log(oneDown); // Devuelve 6, lo removido
+console.log(threeArr); // Devuelve [1, 4], lo que queda</pre></code>
+Si no queremos eliminar el último dato, sino el primero, debemos utilizar <b>.shift</b>:
+<pre><code>var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();</pre></code>
+Si lo que queremos es añadir un dato al principio del array usaremos <b>.unshift()</b>:
+<pre><code>myArray.unshift(["Paul", 35]);</pre></code>
