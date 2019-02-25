@@ -58,3 +58,10 @@ Si no queremos eliminar el último dato, sino el primero, debemos utilizar <b>.s
 var removedFromMyArray = myArray.shift();</pre></code>
 Si lo que queremos es añadir un dato al principio del array usaremos <b>.unshift()</b>:
 <pre><code>myArray.unshift(["Paul", 35]);</pre></code>
+
+*Funciones
+---
+
+It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+
