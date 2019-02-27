@@ -59,9 +59,13 @@ var removedFromMyArray = myArray.shift();</pre></code>
 Si lo que queremos es añadir un dato al principio del array usaremos <b>.unshift()</b>:
 <pre><code>myArray.unshift(["Paul", 35]);</pre></code>
 
-*Funciones
+Funciones (I)
 ---
 
 It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
 A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
 
+Comparadores
+---
+The inequality operator (!=) is the opposite of the equality operator. It means "Not Equal" and returns false where equality would return true and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
+The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa. Strict inequality will not convert data types.
