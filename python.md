@@ -58,3 +58,58 @@ if value == None:
    print("Sorry, you don't carry any value")</pre></code>
 
 Don't forget this: if a function doesn't return a certain value using a return expression clause, it is assumed that it implicitly returns None.
+
+1. A variable that exists outside a function has a scope inside the function body (Example 1) unless the function defines a variable of the same name (Example 2, and Example 3), e.g.:
+
+Example 1:
+
+<pre><code>var = 2
+
+def multByVar(x):
+    return x * var
+
+print(multByVar(7))    # outputs: 14</pre></code>
+
+Example 2:
+
+<pre><code>def mult(x):
+    var = 5
+    return x * var
+
+print(mult(7))    # outputs: 35</pre></code>
+
+Example 3:
+
+<pre><code>def multip(x):
+    var = 7
+    return x * var
+
+var = 3
+print(multip(7))    # outputs: 49</pre></code>
+
+2. A variable that exists inside a function has a scope inside the function body (Example 4), e.g.:
+
+Example 4:
+
+<pre><code>def sum(x):
+    var = 7
+    return x + var
+
+print(sum(4))    # outputs: 11
+
+print(var)    # NameError</pre></code>
+
+3. You can use the global keyword followed by a variable name to make the variable's scope global, e.g.:
+
+<pre><code>var = 2
+print(var)    # outputs: 2
+
+def retVar():
+    global var
+    var = 5
+    return var
+
+print(retVar())    # outputs: 5
+
+print(var)    # outputs: 5</pre></code>
+
