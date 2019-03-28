@@ -43,3 +43,18 @@ A situation like this activates a mechanism called shadowing:
   parameter x shadows any variable of the same name, but...
   ... only inside the function defining the parameter.
 The parameter named number is a completely different entity from the variable named number.
+
+
+Note: None is a keyword.
+
+There are only two kinds of circumstances when None can be safely used:
+
+when you assign it to a variable (or return it as a function's result)
+when you compare it with a variable to diagnose its internal state.
+Just like here:
+
+<pre><code>value = None
+if value == None:
+   print("Sorry, you don't carry any value")</pre></code>
+
+Don't forget this: if a function doesn't return a certain value using a return expression clause, it is assumed that it implicitly returns None.
