@@ -113,3 +113,34 @@ print(retVar())    # outputs: 5
 
 print(var)    # outputs: 5</pre></code>
 
+dictionaries
+-----
+
+Assigning a new value to an existing key is simple - as dictionaries are fully mutable, there are no obstacles to modifying them. Esto sirve también para añadir una no existente:
+
+<pre><code>dict = {"cat" : "chat", "dog" : "chien", "horse" : "cheval"}
+
+dict['cat'] = 'minou'
+print(dict)</pre></code>
+
+Adding a new key-value pair to a dictionary is as simple as changing a value - you only have to assign a value to a new, previously non-existent key.
+
+Note: this is very different behavior compared to lists, which don't allow you to assign values to non-existing indices.
+
+Let's add a new pair of words to the dictionary - a bit weird, but still valid. (Hay otra manera de añadir):
+
+<pre><code>dict = {"cat" : "chat", "dog" : "chien", "horse" : "cheval"}
+
+dict.update({"duck" : "canard"})
+print(dict)</pre></code>
+
+Note: removing a key will always cause the removal of the associated value. Values cannot exist without their keys.
+
+<code>del dict['dog']</code>
+
+To remove the last item in a dictionary, you can use the <code>popitem()</code> method:
+
+<pre><code>dict = {"cat" : "chat", "dog" : "chien", "horse" : "cheval"}
+
+dict.popitem()
+print(dict)    # outputs: {'cat' : 'chat', 'dog' : 'chien'}</pre></code>
