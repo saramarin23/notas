@@ -68,11 +68,11 @@ El código de la página iría en la línea inferior y comenzaría con <.html> y
 
 Dentro de <.html> iría <.head> (donde se define la metainformación) y <.body> (el contenido de nuestra página).
 En el <.head> de la página se incluye una etiqueta <.meta charset=""> indicando al navegador qué juego de caracteres hemos usado al guardar el archivo. El archivo se guarda usando una codificación. A día de hoy usamos *utf-8* que es el más completo:
-<pre><code><!DOCTYPE html>
+<pre><code><.!DOCTYPE html>
 <.html lang="es">
   <.head>
     <.meta charset="utf-8" />
     <title>Mi página</title>
-  </head>
-  <body></body>
-</html></pre></code>
+  <./head>
+  <.body><./body>
+<./html></pre></code>
