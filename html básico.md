@@ -60,7 +60,7 @@ El elemento <b>div</b> es un elemento de división. Es probablemente el más uti
 
 Hay unos pocos elementos adicionales que dan una estructura general a la página y se deberían incluir en cada documento HTML. En la parte superior debemos indicar al navegador qué versión de HTML está utilizando la página:
 <pre><code><.!DOCTYPE ... (sin el punto inicial)> en la que ... es la versión de HTML</pre></code>
-El código de la página iría en la línea inferior y comenzaría con <.html> y se cerraría con <./html>. Dentro de la etiqueta <html> es recomendable indicar en qué idioma está escrito el contenido. Un ejemplo sería:
+El código de la página iría en la línea inferior y comenzaría con <.html> y se cerraría con <./html>. Dentro de la etiqueta <.html> es recomendable indicar en qué idioma está escrito el contenido. Un ejemplo sería:
 <pre><code><.!DOCTYPE html>
 <.html lang="es">
   <.!-- Your HTML code goes here -->
@@ -69,9 +69,9 @@ El código de la página iría en la línea inferior y comenzaría con <.html> y
 Dentro de <.html> iría <.head> (donde se define la metainformación) y <.body> (el contenido de nuestra página).
 En el <.head> de la página se incluye una etiqueta <.meta charset=""> indicando al navegador qué juego de caracteres hemos usado al guardar el archivo. El archivo se guarda usando una codificación. A día de hoy usamos *utf-8* que es el más completo:
 <pre><code><!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
+<.html lang="es">
+  <.head>
+    <.meta charset="utf-8" />
     <title>Mi página</title>
   </head>
   <body></body>
